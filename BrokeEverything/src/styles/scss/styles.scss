@@ -13,7 +13,9 @@
 @import "layout/header", "layout/footer", "layout/grid";
 
 // 5. Components
-@import "components/button", "components/divider", "components/form", "components/icon", "components/input", "components/loading", "components/modal", "components/navbar";
+@import "components/button", "components/divider", "components/form", "components/icon",
+    "components/input", "components/loading", "components/modal", "components/navbar",
+    "components/card";
 
 // 6. Page-specific styles
 @import "pages/home", "pages/404";

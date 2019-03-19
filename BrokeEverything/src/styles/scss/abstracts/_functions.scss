@@ -2,7 +2,6 @@
 // This file contains all application-wide Sass functions.
 // -----------------------------------------------------------------------------
 
-
 /// Constant getter
 /// @param   {String} $name - Name of constant to get
 /// @return  {*}            - Constant value
@@ -10,11 +9,24 @@
 /// @throw   'Unknown constant `#{$name}`.'
 
 @function const($name) {
-  @if not map-has-key($CONSTANTS, $name) {
-    @error 'Unknown constant `#{$name}`.';
-  }
+    @if not map-has-key($CONSTANTS, $name) {
+        @error 'Unknown constant `#{$name}`.';
+    }
 
-  @return map-get($CONSTANTS, $name);
+    @return map-get($CONSTANTS, $name);
+}
+
+/// Grid
+// Columns
+@for $i from 1 through $columns {
+    .col-#{$i} {
+        flex: 1 2 100% / $columns * $i - 4;
+        margin: 0.25em;
+        max-width: 100% / $columns * $i;
+    }
+    .col-offset-#{$i} {
+        margin-left: 100% / $columns * $i !important;
+    }
 }
 
 /// Native `url(..)` function wrapper
@@ -23,7 +35,7 @@
 /// @param {String} $path - asset path
 /// @return {Url}
 @function asset($base, $type, $path) {
-  @return url($base + $type + $path);
+    @return url($base+$type+$path);
 }
 
 /// Returns URL to an image based on its path
@@ -32,7 +44,7 @@
 /// @return {Url}
 /// @require $base-url
 @function image($path, $base: $base-url) {
-  @return asset($base, 'images/', $path);
+    @return asset($base, "images/", $path);
 }
 
 /// Returns URL to a font based on its path
@@ -41,5 +53,5 @@
 /// @return {Url}
 /// @require $base-url
 @function font($path, $base: $base-url) {
-  @return asset($base, 'fonts/', $path);
+    @return asset($base, "fonts/", $path);
 }

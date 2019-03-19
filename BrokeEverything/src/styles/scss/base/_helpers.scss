@@ -25,6 +25,34 @@
         padding: 1em;
     }
 }
+///Card
+.card-container {
+    max-width: calc(100% - 5em);
+    margin: 1em auto;
+}
+
+.card {
+    border: 1px solid black;
+    border-radius: 5px;
+    box-shadow: 3px 3px 4px 2px rgba(0, 0, 0, 0.4);
+    min-width: 15em;
+    .card-head {
+        padding: 1em;
+        min-height: 3em;
+        border-bottom: 1px solid black;
+    }
+    .card-content {
+        min-height: 10em;
+    }
+    .card-foot {
+        height: 1em;
+        border-top: 1px solid black;
+    }
+}
+
+.outline {
+    border: 1px solid black;
+}
 
 .title {
     font-size: 24px;
@@ -39,6 +67,7 @@
 div[class^="col-"] {
     padding: 1rem;
 }
+
 
 /**
  * Hide text while making it readable for screen readers

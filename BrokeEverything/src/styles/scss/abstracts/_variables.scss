@@ -8,9 +8,6 @@
 
 $CONSTANTS: () !global;
 
-///GRID VARIABLES
-
-
 //Font families
 $font-stacks: (
   // Sans-serif
@@ -84,7 +81,13 @@ $breakpoints: (
   'large': 1024px,
 ) !default;
 
+///GRID VARIABLES
+$columns: 12;
 
+
+$card-config: (
+  //TODO: config for card after build
+);
 
 
 

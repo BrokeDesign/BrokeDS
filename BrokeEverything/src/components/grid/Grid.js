@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 
 const Grid = (props) => {
     return(
-        <div>{props.children}</div>
+        <div className="container">{props.children}</div>
     );
 }
 
