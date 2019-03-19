@@ -18,6 +18,18 @@ const App = () => {
                     </Card>
                 </Col>
             </Row>
+            <Row>
+                <Col colSize="6">
+                    <Card container="card-container">
+                        col-6
+                    </Card>
+                </Col>
+                <Col colSize="6">
+                    <Card container="card-container">
+                        <button class="button">Test</button>
+                    </Card>
+                </Col>
+            </Row>
         </Grid>
         
         <Footer><h1>Footer</h1></Footer>
