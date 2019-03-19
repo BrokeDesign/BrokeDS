@@ -112,27 +112,16 @@ cd ./BrokeDS/BrokeEverything
 ```
 
 
-Install NPM packages
+Install NPM packages and start the server
 
 ```sh
-npm i
+npm i && yarn start
 ```
 
 OR
 
 ```sh
-yarn add
-```
-
-Run the webpack dev server
-```sh
-npm start
-```
-
-OR
-
-```sh
-yarn start
+yarn add && yarn start
 ```
 
 
