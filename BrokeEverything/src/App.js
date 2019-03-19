@@ -11,8 +11,8 @@ const App = () => {
             <h1>BrokeDS - Broke Everything</h1>
         </Header>
         <Grid>
-            <Row border="outline">
-                <Col colSize={12}>
+            <Row>
+                <Col>
                     <Card container="card-container">
                         col-12
                     </Card>

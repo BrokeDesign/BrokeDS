@@ -8,12 +8,12 @@ const Card = props => {
 Card.propTypes = {
     children: PropTypes.any,
     // If card should have container, value is card-container
-    container: PropTypes.string,
+    container: PropTypes.oneOf(["", "card-container"]),
 };
 
 Card.defaultProps = {
     children: "",
-    container: "",
+    container: "card-container"
 };
 
 export default Card;

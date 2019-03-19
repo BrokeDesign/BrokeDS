@@ -1,6 +1,6 @@
 {
     "name": "@brokeds/broke-everything",
-    "version": "0.1.0",
+    "version": "0.2.0",
     "description": "Broke Design System full package, includes react components and css framework",
     "scripts": {
         "start": "webpack-dev-server --mode development --open --hot",
