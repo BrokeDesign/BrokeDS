@@ -6,17 +6,11 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const path = require('path');
 
 module.exports = {
-    entry: ['@babel/polyfill', './src/index.js'],
+    entry: ['@babel/polyfill', './src/index.js', './src/styles/scss/styles.scss'],
     output: {
         path: path.join(__dirname, '/dist'),
         filename: 'index-bundle.js',
         publicPath: '/',
-    },
-    resolve: {
-        alias: {
-            '@components': path.resolve(__dirname, 'src/components'),
-            '@style': path.resolve(__dirname, 'src/styles/scss')
-        },
     },
     module: {
         rules: [
@@ -30,7 +24,7 @@ module.exports = {
                 use: [{ loader: 'html-loader', options: { minimize: true } }],
             },
             {
-                test: /\.(scss|sass|css)$/,
+                test: /\.s?(a|c)ss$/,
                 exclude: /node_modules/,
                 loaders: [
                     MiniCssExtractPlugin.loader,

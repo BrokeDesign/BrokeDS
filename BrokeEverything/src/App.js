@@ -20,14 +20,10 @@ const App = () => {
             </Row>
             <Row>
                 <Col colSize="6">
-                    <Card container="card-container">
-                        col-6
-                    </Card>
+                    col-6
                 </Col>
                 <Col colSize="6">
-                    <Card container="card-container">
-                        <button class="button">Test</button>
-                    </Card>
+                    Col-6
                 </Col>
             </Row>
         </Grid>

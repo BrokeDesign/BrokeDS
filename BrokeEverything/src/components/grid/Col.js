@@ -13,7 +13,7 @@ Col.propTypes = {
      * Acceptable values:
      *      integer 1-12
      */
-    colSize: PropTypes.number,
+    colSize: PropTypes.oneOf(["1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12"]),
 
     /** OffSet
      *  @description Column offset, number provided offsets column that many frames forward.
@@ -25,7 +25,7 @@ Col.propTypes = {
 
 Col.defaultProps = {
     children: "",
-    colSize: 12,
+    colSize: "12",
     offset: ""
 };
 
