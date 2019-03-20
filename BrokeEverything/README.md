@@ -1,121 +1,194 @@
-# Broke Design System
+<!--
+*** Thanks for checking out this README Template. If you have a suggestion that would
+*** make this better please fork the repo and create a pull request or simple open
+*** an issue with the tag "enhancement".
+*** Thanks again! Now go create something AMAZING! :D
+-->
 
-> Design System from scratch
 
-<!--- No npm or build status yet, future use
-[![NPM Version][npm-image]][npm-url]
-[![Build Status][travis-image]][travis-url]
-[![Downloads Stats][npm-downloads]][npm-url]
---->
 
-This framework is in it's earliest stages, feel free to contribute with your ideas!
-The design system is intended to supply design/dev guidelines as well as a css framework and react component library.
 
-![App Banner](public/readMeBanner.png)
 
-## Installation
+<!-- PROJECT SHIELDS -->
+[![Build Status][build-shield]]()
+[![Contributors][contributors-shield]]()
+[![MIT License][license-shield]][license-url]
+[![LinkedIn][linkedin-shield]][linkedin-url]
 
-1. Clone this repo to wherever you clone your repos to
-2. Rename the App to your project name
-3. Navigate into the project directory
-4. Run `yarn` (or `npm install` alternatively)
-5. Run `yarn test` to make sure things went well
-6. Start the React App by running `yarn start`
 
-```md
-TBD
+
+<!-- PROJECT LOGO -->
+<br />
+<p align="center">
+  <a href="https://github.com/SkothaSec/BrokeDS/tree/master/BrokeEverything">
+    <img src="BrokeEverything/src/assets/images/logo.svg" alt="Logo">
+  </a>
+
+  <h3 align="center">Broke Design System</h3>
+
+  <p align="center">
+    A design system with an opinionated React Component library and CSS framework.
+    <br />
+    <a href="https://github.com/SkothaSec/BrokeDS/tree/master/BrokeEverything"><strong>Explore the docs »</strong></a>
+    <br />
+    <br />
+    <a href="https://github.com/SkothaSec/BrokeDS">View Demo `TBD`</a>
+    ·
+    <a href="https://github.com/SkothaSec/BrokeDS/issues">Report Bug</a>
+    ·
+    <a href="https://github.com/SkothaSec/BrokeDS/issues">Request Feature</a>
+  </p>
+</p>
+
+
+
+<!-- TABLE OF CONTENTS -->
+## Table of Contents
+
+* [About the Project](#about-the-project)
+  * [Built With](#built-with)
+* [Getting Started](#getting-started)
+* [Development - Getting Started](#development-getting-started)
+  * [Prerequisites](#prerequisites)
+  * [Installation](#installation)
+* [Usage](#usage)
+* [Contributing](#contributing)
+* [License](#license)
+* [Contact](#contact)
+* [Acknowledgements](#acknowledgements)
+
+
+
+<!-- ABOUT THE PROJECT -->
+## About The Project
+
+[![Product Name Screen Shot][product-screenshot]](https://example.com) <!--Eventually needs to be updated-->
+
+While there are plenty of css frameworks, design systems, and react component libraries out in the wild, it can be a struggle to find one that allows simple implementation and use along with heavy trust in the user to customize to their needs without having to jump through hoops. This project aims to remediate that.
+
+### Built With
+
+* [SASS](https://sass.com) 
+* [React](https://reactjs.org)
+* [Webpack](https://webpackjs.com)
+* [Babel](https://babeljs.com)
+
+
+<!-- GETTING STARTED -->
+## Getting Started
+
+Broken Design System is in it's very earliest stages at them moment so it's important to keep in mind that frequent updates will be the norm. Right now, what is available for use is very limited.
+
+### Installation
+//TODO: This will be added when base features are implemented
+
+**Node Module**
+
+_npm_
+```sh
+npm i -D @brokeds/broke-everything
+```
+
+OR
+
+_yarn_
+```sh
+yarn add -D @brokeds/broke-everything
+```
+
+Then import the module inside of your entrypoint (eg. `src/index.js`)
+```js
+import @brokeds/broke-everything
 ```
 
 
-## Usage example
+**Github repo**
 
-`TBD`
+Clone the repo and navigate to the full feature directory
 
-_For more information and usage, please refer to the [Wiki][wiki]._
+```sh
+git clone https:://github.com/SkothaSec/BrokeDS.git  && /
+cd ./BrokeDS/BrokeEverything
+```
 
-## Release History
 
--   0.1.0
-    -   Formatted from OMCSS
--   0.0.1
-    -   Work in progress
+Install NPM packages and start the server
 
-## Meta
+```sh
+npm i && yarn start
+```
 
-Christian Gorke – dev.cmgorke@gmail.com
+OR
 
--   [![Twitter][twitter-icon]][twitter-link] Follow me on twitter
--   [![Github][github-icon]][github-link] Check out my other repos on github
+```sh
+yarn add && yarn start
+```
 
-Distributed under the MIT license. See `LICENSE` for more information.
 
+<!-- USAGE EXAMPLES -->
+## Usage
+
+Using CSS in react app:
+
+**Import package in entry file**
+
+`src/index.js`
+```js
+Package testing needs work first to test 
+```
+
+
+
+
+`placeholder` _For more examples, please refer to the [Documentation](https://example.com)_
+
+
+
+<!-- CONTRIBUTING -->
 ## Contributing
 
-1. Fork it (<https://github.com/SkothaSec/BrokeDS/fork>)
-2. Create your feature branch (`git checkout -b feature/fooBar`)
-3. Commit your changes (`git commit -am 'Added some fooBar'`)
-4. Push to the branch (`git push origin feature/fooBar`)
-5. Create a new Pull Request
+Contributions are what make the open source community such an amazing place to be learn, inspire, and create. Any contributions you make are **greatly appreciated**.
 
-### Documentation
+1. Fork the Project
+2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your Changes (`git commit -m 'Add some AmazingFeature`)
+4. Push to the Branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
 
-Skotha CSS uses the ole' OMCSS (Organizable and Maintainable CSS) way as a means to keep things scalable.
 
-OMCSS is an approach that will help designers and developers write code that will be future-clean and scalable at the same time. OMCSS' file structure helps developer organise their stylesheets in a manner that produces understandable and clean css structure that is easy to organise and maintain - OMCSS
 
-#### OMCSS File Structure
+<!-- LICENSE -->
+## License
 
-OMCSS is a modular approach that helps you arrange your css into `theme`, `pages`, `layouts` and `modules`. Along with these, it also provide helper folders i.e. `base`, `utils` and `vendors` to organise your helper css files.
+Distributed under the MIT License. See `LICENSE` for more information.
 
-Below is a complete description of OMCSS file structure:
 
--   **Base**
-    Base contains css styles on base content such as reset, grid, typography etc.
 
--   **Themes**
-    Themes contains css styles for your application themes such as primary, secondary, default, dashboard etc.
+<!-- CONTACT -->
+## Contact
 
--   **Pages**
-    Pages contains css styles for your individual pages such as home, about-us, contact etc.
+Christian Gorke - [@skothasec](https://twitter.com/skothasec) - dev.cmgorke@gmail.com
 
--   **Layouts**
-    Layouts contains css style for main application components such as header, footer, sidebar etc.
+Project Link: [https://github.com/SkothaSec/BrokeDS](https://github.com/SkothaSec/BrokeDS)
 
--   **Modules**
-    Modules contains css style for re-usable application ui components such as carousel, navigation, breadcrumb, card etc.
 
--   **Utils**
-    Modules contains utility styles such as mixins, functions, variables etc.
 
--   **Vendors**
-    Vendor contains third-party css libraries and frameworks such as jquery-ui, bootstrap, foundation etc.
+<!-- ACKNOWLEDGEMENTS -->
+## Acknowledgements
+* [SASS Guidelines](https://sass-guidline.es/)
+  * [7-1 Pattern](https://sass-guidelin.es/#the-7-1-pattern)
+* **Color Sytems**
+  * Article - [_The Light and the Dark Side: Creating a UI colour system_](https://uxdesign.cc/the-light-and-the-dark-side-creating-a-ui-colour-system-in-3-steps-41818c5bdb60)
 
--   **Shame**
-    Shame contains css styles that you are shame about or you have written as an urgent request and will soon change it and write proper code. Its wise to write messy css for any of the above styles over here.
 
-#### Naming Convention
 
-Starting out the only true naming conventions are for colors, which greek numerals are being used.
-alpha, beta, gamma, psi, omega.
 
-## Credits
 
-This README template is based on of Dan Bader's README Template`.
-
--   [_Dan Bader's Repo `README-Template`_](https://github.com/dbader/readme-template)
--   [_Dan Bader's Blog on README setups_](https://dbader.org/blog/write-a-great-readme-for-your-github-project)
-
-Bootstrap and OMCSS (Using there grid system and project is structured by OCMCSS).
-
-<!-- Markdown link & img dfn's -->
-
-[npm-image]: https://img.shields.io/npm/v/datadog-metrics.svg?style=flat-square
-[npm-url]: https://npmjs.org/package/datadog-metrics
-[npm-downloads]: https://img.shields.io/npm/dm/datadog-metrics.svg?style=flat-square
-[travis-image]: https://img.shields.io/travis/dbader/node-datadog-metrics/master.svg?style=flat-square
-[travis-url]: https://travis-ci.org/dbader/node-datadog-metrics
-[wiki]: https://github.com/yourname/yourproject/wiki
-[github-link]: https://github.com/skothasec/
-[github-icon]: http://i.imgur.com/0o48UoR.png
-[twitter-icon]: http://i.imgur.com/tXSoThF.png
-[twitter-link]: https://twitter.com/skothasec
+<!-- MARKDOWN LINKS & IMAGES -->
+[build-shield]: https://img.shields.io/badge/build-passing-brightgreen.svg?style=flat-square
+[contributors-shield]: https://img.shields.io/badge/contributors-1-orange.svg?style=flat-square
+[license-shield]: https://img.shields.io/badge/license-MIT-blue.svg?style=flat-square
+[license-url]: https://choosealicense.com/licenses/mit
+[linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=flat-square&logo=linkedin&colorB=555
+[linkedin-url]: https://linkedin.com/in/cmgorke
+[product-screenshot]: https://raw.githubusercontent.com/othneildrew/Best-README-Template/master/screenshot.png
