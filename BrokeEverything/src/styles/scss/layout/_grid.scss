@@ -5,6 +5,9 @@
 	flex-wrap: wrap;
 }
 
+div[class^="col-"] {
+	padding: 1rem;
+}
 
 @for $i from 1 through $columns {
   .col-#{$i} {

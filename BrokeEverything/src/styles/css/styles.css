@@ -430,9 +430,6 @@ a {
     color: #222222;
     text-decoration: underline; }
 
-div[class^="col-"] {
-  padding: 1rem; }
-
 section {
   margin: 2rem auto;
   width: calc(100% - 10rem);
@@ -504,6 +501,9 @@ Item grouping Wrapper
 .row {
   display: flex;
   flex-wrap: wrap; }
+
+div[class^="col-"] {
+  padding: 1rem; }
 
 .col-1 {
   flex: 1 3 4.33333%;
@@ -682,7 +682,9 @@ Item grouping Wrapper
     min-height: 3em;
     border-bottom: 1px solid black; }
   .card .card-content {
+    padding: 1em;
     min-height: 10em; }
   .card .card-foot {
-    height: 1em;
+    padding: 1em;
+    min-height: 3em;
     border-top: 1px solid black; }

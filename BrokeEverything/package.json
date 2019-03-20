@@ -1,6 +1,6 @@
 {
     "name": "@brokeds/broke-everything",
-    "version": "0.2.3",
+    "version": "0.2.4",
     "description": "Broke Design System full package, includes react components and css framework",
     "repository": {
         "type": "git",
@@ -61,6 +61,7 @@
     },
     "dependencies": {
         "@babel/polyfill": "^7.2.5",
+        "sass-lint": "^1.12.1",
         "webpack": "^4.29.6"
     }
 }

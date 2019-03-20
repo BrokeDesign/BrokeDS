@@ -61,15 +61,15 @@ module.exports = {
         new CleanWebpackPlugin(),
         new HtmlWebpackPlugin({
             template: './public/index.html',
-            favicon: './public/favicon.ico',
+            favicon: './public/favicon.svg',
         }),
         // Makes some environment variables available in index.html.
         // The public URL is available as %PUBLIC_URL% in index.html, e.g.:
         // <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico">
         // In development, this will be an empty string.
-        new InterpolateHtmlPlugin({
+        devMode ? new InterpolateHtmlPlugin({
             PUBLIC_URL: '',
-        }),
+        }) : console.log('Success: Skipping InterpolateHtmlPlugin for production'),
         new MiniCssExtractPlugin({
             filename: devMode ? '[name].css' : '[name].[hash].css',
             chunkFilename: devMode ? '[id].css' : '[id].[hash].css',

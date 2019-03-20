@@ -18,6 +18,9 @@ $color-types: (
 ) !default;
 
 // Grid column base count
+// TODO: should columns be here or in the grid component??
+
+// ! Removing columns variable causes compile failure, unknown reason 
 $columns: 12;
 
 //Font families
