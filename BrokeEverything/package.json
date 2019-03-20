@@ -1,6 +1,6 @@
 {
     "name": "@brokeds/broke-everything",
-    "version": "0.2.0",
+    "version": "0.2.1",
     "description": "Broke Design System full package, includes react components and css framework",
     "scripts": {
         "compile:sass": "node-sass src/styles/scss/styles.scss src/styles/css/styles.css",
