@@ -16,18 +16,6 @@
     @return map-get($CONSTANTS, $name);
 }
 
-/// Grid
-// Columns
-@for $i from 1 through $columns {
-    .col-#{$i} {
-        flex: 1 2 100% / $columns * $i - 4;
-        margin: 0.25em;
-        max-width: 100% / $columns * $i;
-    }
-    .col-offset-#{$i} {
-        margin-left: 100% / $columns * $i !important;
-    }
-}
 
 /// Native `url(..)` function wrapper
 /// @param {String} $base - base URL for the asset

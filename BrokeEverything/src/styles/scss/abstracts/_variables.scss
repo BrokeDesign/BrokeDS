@@ -8,6 +8,8 @@
 
 $CONSTANTS: () !global;
 
+$columns: 12;
+
 //Font families
 $font-stacks: (
   // Sans-serif
@@ -81,8 +83,6 @@ $breakpoints: (
   'large': 1024px,
 ) !default;
 
-///GRID VARIABLES
-$columns: 12;
 
 
 /// Relative or absolute URL where all assets are served from

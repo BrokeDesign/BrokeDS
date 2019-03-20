@@ -3,6 +3,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const InterpolateHtmlPlugin = require('interpolate-html-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
+const devMode = process.env.NODE_ENV !== 'production'
 const path = require('path');
 
 module.exports = {
@@ -26,17 +27,9 @@ module.exports = {
             {
                 test: /\.s?(a|c)ss$/,
                 exclude: /node_modules/,
-                loaders: [
-                    MiniCssExtractPlugin.loader,
-                    {
-                        loader: 'css-loader',
-                        options: {
-                            modules: true,
-                            sourceMap: true,
-                            importLoaders: 1,
-                            localIdentName: '[local]___[hash:base64:5]',
-                        },
-                    },
+                use: [
+                    devMode ? 'style-loader' : MiniCssExtractPlugin.loader,
+                    'css-loader',
                     'sass-loader',
                 ],
             },
@@ -78,8 +71,8 @@ module.exports = {
             PUBLIC_URL: '',
         }),
         new MiniCssExtractPlugin({
-            filename: '[name].css',
-            chunkFilename: '[id].css',
+            filename: devMode ? '[name].css' : '[name].[hash].css',
+            chunkFilename: devMode ? '[id].css' : '[id].[hash].css',
         }),
     ],
 };
