@@ -431,7 +431,6 @@ a {
     text-decoration: underline; }
 
 div[class^="col-"] {
-  border: 1px solid black;
   padding: 1rem; }
 
 section {
@@ -464,6 +463,16 @@ section {
   max-width: 70em; }
   .container .container-head {
     padding: 1em; }
+
+/**
+Item grouping Wrapper
+*/
+.wrapper {
+  display: flex;
+  flex-flow: row wrap;
+  margin: 2em;
+  width: 70%;
+  height: 90%; }
 
 /**
  * Hide text while making it readable for screen readers
@@ -628,11 +637,36 @@ section {
 .col-offset-12 {
   margin-left: 100% !important; }
 
-.button {
-  background-color: black;
-  width: 4em;
-  height: 4em;
-  color: white; }
+.button-alpha, .button-beta, .button-gamma, .button-psi, .button-omega {
+  padding: 0.5em;
+  margin: 0.5em;
+  border-radius: 0.15em;
+  border: 1px solid; }
+
+.button-alpha {
+  color: contrast(#002e42);
+  background: #05b4ff;
+  border-color: #0076a8; }
+
+.button-beta {
+  color: contrast(#3c758b);
+  background: #adcfdc;
+  border-color: #6da9c0; }
+
+.button-gamma {
+  color: contrast(#06efb5);
+  background: #b9fdec;
+  border-color: #60fbd4; }
+
+.button-psi {
+  color: contrast(#f35344);
+  background: #fffbfa;
+  border-color: #f9aba4; }
+
+.button-omega {
+  color: contrast(#bf1833);
+  background: #f4a4b1;
+  border-color: #ea536c; }
 
 .card-container {
   max-width: calc(100% - 5em);

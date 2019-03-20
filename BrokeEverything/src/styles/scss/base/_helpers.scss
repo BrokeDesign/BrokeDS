@@ -27,7 +27,16 @@
 }
 
 
-
+/**
+Item grouping Wrapper
+*/
+.wrapper {
+	display: flex;
+	flex-flow: row wrap;
+	margin: 2em;
+	width: 70%;
+	height: 90%;
+}
 
 
 /**

@@ -1,6 +1,6 @@
 {
     "name": "@brokeds/broke-everything",
-    "version": "0.2.1",
+    "version": "0.2.2",
     "description": "Broke Design System full package, includes react components and css framework",
     "repository": {
         "type": "git",
@@ -54,8 +54,6 @@
         "react-router-dom": "^4.4.0",
         "sass-loader": "^7.1.0",
         "style-loader": "^0.23.1",
-        "stylelint": "^9.10.1",
-        "stylelint-order": "^2.1.0",
         "url-loader": "^1.1.2",
         "webpack-cli": "^3.2.3",
         "webpack-dev-server": "^3.2.1",
