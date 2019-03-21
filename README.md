@@ -11,7 +11,7 @@
 
 <!-- PROJECT SHIELDS -->
 [![Build Status][build-shield]]() <br />
-[![Netlify Status](https://api.netlify.com/api/v1/badges/40aee951-68c0-4d2d-a7d3-675c57166adc/deploy-status)](https://app.netlify.com/sites/brokeds/deploys)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/40aee951-68c0-4d2d-a7d3-675c57166adc/deploy-status)][netlify-build-shield]
 [![Contributors][contributors-shield]]()
 [![MIT License][license-shield]][license-url]
 [![LinkedIn][linkedin-shield]][linkedin-url]
@@ -30,10 +30,10 @@
   <p align="center">
     A design system with an opinionated React Component library and CSS framework.
     <br />
-    <a href="https://github.com/SkothaSec/BrokeDS/tree/master/BrokeEverything"><strong>Explore the docs »</strong></a>
+    <a href="https://brokeds.netlify.com/"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://github.com/SkothaSec/BrokeDS">View Demo `TBD`</a>
+    <a href="https://brokeds.netlify.com/">View Demo `TBD`</a>
     ·
     <a href="https://github.com/SkothaSec/BrokeDS/issues">Report Bug</a>
     ·
@@ -63,7 +63,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot]](https://example.com) <!--Eventually needs to be updated-->
+[![Product Name Screen Shot][product-screenshot]](https://brokeds.netlify.com/) 
 
 While there are plenty of css frameworks, design systems, and react component libraries out in the wild, it can be a struggle to find one that allows simple implementation and use along with heavy trust in the user to customize to their needs without having to jump through hoops. This project aims to remediate that.
 
@@ -73,6 +73,7 @@ While there are plenty of css frameworks, design systems, and react component li
 * [React](https://reactjs.org)
 * [Webpack](https://webpackjs.com)
 * [Babel](https://babeljs.com)
+
 
 
 <!-- GETTING STARTED -->
@@ -141,7 +142,7 @@ Package testing needs work first to test
 
 
 
-`placeholder` _For more examples, please refer to the [Documentation](https://example.com)_
+`placeholder` _For more examples, please refer to the [Documentation](https://brokeds.netlify.com/)_
 
 
 
@@ -186,6 +187,7 @@ Project Link: [https://github.com/SkothaSec/BrokeDS](https://github.com/SkothaSe
 
 
 <!-- MARKDOWN LINKS & IMAGES -->
+[netlify-build-shield]: https://app.netlify.com/sites/brokeds/deploys
 [build-shield]: https://img.shields.io/badge/build-passing-brightgreen.svg?style=flat-square
 [contributors-shield]: https://img.shields.io/badge/contributors-1-orange.svg?style=flat-square
 [license-shield]: https://img.shields.io/badge/license-MIT-blue.svg?style=flat-square

@@ -1,6 +1,6 @@
 {
     "name": "@brokeds/broke-everything",
-    "version": "0.2.4",
+    "version": "0.3.0",
     "description": "Broke Design System full package, includes react components and css framework",
     "repository": {
         "type": "git",
