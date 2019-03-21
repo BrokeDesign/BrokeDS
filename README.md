@@ -10,7 +10,8 @@
 
 
 <!-- PROJECT SHIELDS -->
-[![Build Status][build-shield]]()
+[![Build Status][build-shield]]() <br />
+[![Netlify Status](https://api.netlify.com/api/v1/badges/40aee951-68c0-4d2d-a7d3-675c57166adc/deploy-status)](https://app.netlify.com/sites/brokeds/deploys)
 [![Contributors][contributors-shield]]()
 [![MIT License][license-shield]][license-url]
 [![LinkedIn][linkedin-shield]][linkedin-url]
